@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/reajul/Desktop/asyn_fifo_third/rtl/async_fifo.sv" into library work
+INFO: [VRFC 10-311] analyzing module async_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/reajul/Desktop/asyn_fifo_third/rtl/fifo_mem.sv" into library work
+INFO: [VRFC 10-311] analyzing module fifo_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/reajul/Desktop/asyn_fifo_third/rtl/fifo_rd_ctrl.sv" into library work
+INFO: [VRFC 10-311] analyzing module fifo_rd_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/reajul/Desktop/asyn_fifo_third/rtl/fifo_wr_ctrl.sv" into library work
+INFO: [VRFC 10-311] analyzing module fifo_wr_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/reajul/Desktop/asyn_fifo_third/rtl/sync_2ff.sv" into library work
+INFO: [VRFC 10-311] analyzing module sync_2ff
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/reajul/Desktop/asyn_fifo_third/tb/tb_async_fifo.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_async_fifo

@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 14 2025
+12:36:23
+/home/reajul/Desktop/asyn_fifo_third/rtl/async_fifo.sv,1780395156,systemVerilog,,/home/reajul/Desktop/asyn_fifo_third/rtl/fifo_mem.sv,,async_fifo,,,,,,,,
+/home/reajul/Desktop/asyn_fifo_third/rtl/fifo_mem.sv,1780395201,systemVerilog,,/home/reajul/Desktop/asyn_fifo_third/rtl/fifo_rd_ctrl.sv,,fifo_mem,,,,,,,,
+/home/reajul/Desktop/asyn_fifo_third/rtl/fifo_rd_ctrl.sv,1780395258,systemVerilog,,/home/reajul/Desktop/asyn_fifo_third/rtl/fifo_wr_ctrl.sv,,fifo_rd_ctrl,,,,,,,,
+/home/reajul/Desktop/asyn_fifo_third/rtl/fifo_wr_ctrl.sv,1780395325,systemVerilog,,/home/reajul/Desktop/asyn_fifo_third/rtl/sync_2ff.sv,,fifo_wr_ctrl,,,,,,,,
+/home/reajul/Desktop/asyn_fifo_third/rtl/sync_2ff.sv,1780395289,systemVerilog,,/home/reajul/Desktop/asyn_fifo_third/tb/tb_async_fifo.sv,,sync_2ff,,,,,,,,
+/home/reajul/Desktop/asyn_fifo_third/tb/tb_async_fifo.sv,1780395715,systemVerilog,,,,tb_async_fifo,,,,,,,,

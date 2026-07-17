@@ -1,0 +1,205 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Jun  2 16:22:12 2026
+# Process ID         : 1028731
+# Current directory  : /home/reajul/Desktop/asyn_fifo_third/sim
+# Command line       : xsim -mode tcl -source {xsim.dir/tb_async_fifo_snap/xsim_script.tcl}
+# Log file           : /home/reajul/Desktop/asyn_fifo_third/sim/xsim.log
+# Journal file       : /home/reajul/Desktop/asyn_fifo_third/sim/xsim.jou
+# Running On         : vlsi-vivado
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+# CPU Frequency      : 4001.082 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 41879 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 50469 MB
+# Available Virtual  : 39457 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_async_fifo_snap/xsim_script.tcl
+# xsim {tb_async_fifo_snap} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+========================================
+  Async FIFO Testbench Start
+  DATA_WIDTH=32  FIFO_DEPTH=16
+  wr_clk=100 MHz  rd_clk=142.9 MHz
+========================================
+
+--- Test 1: Reset ---
+ERROR: Could not open vcd file async_fifo_waves.vcd. A VCD file by name fifo.vcd has already been opened. Only one VCD file is allowed to be open.
+PASS: empty=1  full=0 after reset
+
+--- Test 2: Write until full (16 entries) ---
+PASS: full asserted correctly after 16 writes
+
+--- Test 3: Write when full (should be ignored) ---
+PASS: overflow write ignored (ref_queue size=15)
+
+--- Test 4: Read until empty ---
+PASS [t=488000]: rd_data=0xa0000000
+PASS [t=509000]: rd_data=0xa0000001
+PASS [t=530000]: rd_data=0xa0000002
+PASS [t=551000]: rd_data=0xa0000003
+PASS [t=572000]: rd_data=0xa0000004
+PASS [t=593000]: rd_data=0xa0000005
+PASS [t=614000]: rd_data=0xa0000006
+PASS [t=635000]: rd_data=0xa0000007
+PASS [t=656000]: rd_data=0xa0000008
+PASS [t=677000]: rd_data=0xa0000009
+PASS [t=698000]: rd_data=0xa000000a
+PASS [t=719000]: rd_data=0xa000000b
+PASS [t=740000]: rd_data=0xa000000c
+PASS [t=761000]: rd_data=0xa000000d
+PASS [t=782000]: rd_data=0xa000000e
+PASS: empty asserted correctly after 16 reads
+
+--- Test 5: Read when empty (should be ignored) ---
+PASS: underflow read ignored (queue still empty=1)
+
+--- Test 6: Simultaneous read and write ---
+PASS [t=1097000]: rd_data=0xb0000000
+PASS [t=1118000]: rd_data=0xb0000001
+PASS [t=1139000]: rd_data=0xb0000002
+PASS [t=1160000]: rd_data=0xb0000003
+PASS [t=1181000]: rd_data=0xb0000004
+PASS [t=1202000]: rd_data=0xb0000005
+PASS [t=1223000]: rd_data=0xb0000006
+PASS [t=1244000]: rd_data=0xb0000007
+PASS [t=1517000]: rd_data=0xc0000000
+PASS [t=1538000]: rd_data=0xc0000001
+PASS [t=1559000]: rd_data=0xc0000002
+PASS [t=1580000]: rd_data=0xc0000003
+PASS [t=1601000]: rd_data=0xc0000004
+PASS [t=1622000]: rd_data=0xc0000005
+PASS [t=1643000]: rd_data=0xc0000006
+PASS [t=1664000]: rd_data=0xc0000007
+PASS [t=1685000]: rd_data=0xc0000008
+PASS [t=1706000]: rd_data=0xc0000009
+PASS [t=1727000]: rd_data=0xc000000a
+PASS [t=1748000]: rd_data=0xc000000b
+PASS [t=1769000]: rd_data=0xc000000c
+PASS [t=1790000]: rd_data=0xc000000d
+PASS [t=1811000]: rd_data=0xc000000e
+PASS [t=1832000]: rd_data=0xc000000f
+PASS: simultaneous R+W complete
+
+--- Test 7: Random mixed traffic (200 ops) ---
+PASS [t=1902000]: rd_data=0x342a6032
+PASS [t=1965000]: rd_data=0x1e69420c
+PASS [t=2042000]: rd_data=0x922bb93f
+PASS [t=2105000]: rd_data=0x61934057
+PASS [t=2154000]: rd_data=0xb9d60c2f
+PASS [t=2182000]: rd_data=0x53c07d24
+PASS [t=2203000]: rd_data=0xa86cee18
+PASS [t=2231000]: rd_data=0x722aa16e
+PASS [t=2252000]: rd_data=0x77d72f4e
+PASS [t=2273000]: rd_data=0x90c86ee8
+PASS [t=2364000]: rd_data=0x799f9910
+PASS [t=2385000]: rd_data=0x93288036
+PASS [t=2406000]: rd_data=0xa3cf1633
+PASS [t=2476000]: rd_data=0xa09ba865
+PASS [t=2651000]: rd_data=0x4ad9a621
+PASS [t=2707000]: rd_data=0x6c8aeb4b
+PASS [t=2756000]: rd_data=0x448b976b
+PASS [t=2812000]: rd_data=0x366cc61c
+PASS [t=2833000]: rd_data=0x95a71c56
+PASS [t=2854000]: rd_data=0x43bdf8bc
+PASS [t=2917000]: rd_data=0x6cd15f23
+PASS [t=2938000]: rd_data=0x5e373cdb
+PASS [t=3001000]: rd_data=0x62b637a5
+PASS [t=3106000]: rd_data=0x7344cbfc
+PASS [t=3204000]: rd_data=0x16526ff0
+PASS [t=3225000]: rd_data=0x145d8bda
+PASS [t=3246000]: rd_data=0x17486859
+PASS [t=3267000]: rd_data=0x327865b4
+PASS [t=3288000]: rd_data=0x2c1a8a29
+PASS [t=3365000]: rd_data=0x205ceb04
+PASS [t=3407000]: rd_data=0xbed06667
+PASS [t=3435000]: rd_data=0x04d1a133
+PASS [t=3456000]: rd_data=0x1a3ef76f
+PASS [t=3512000]: rd_data=0x4a1c91f2
+PASS [t=3533000]: rd_data=0xaa4e2f08
+PASS [t=3575000]: rd_data=0x5bbefd8e
+PASS [t=3652000]: rd_data=0xb71718c4
+PASS [t=3687000]: rd_data=0x49245e2c
+PASS [t=3715000]: rd_data=0x519c3771
+PASS [t=3813000]: rd_data=0x49c38614
+PASS [t=3876000]: rd_data=0x134724ce
+PASS [t=3897000]: rd_data=0xbafe2595
+PASS [t=3918000]: rd_data=0x15aa1450
+PASS [t=3946000]: rd_data=0x1cdfb73e
+PASS [t=3995000]: rd_data=0xb4159965
+PASS [t=4023000]: rd_data=0x48492d80
+PASS [t=4156000]: rd_data=0x7e12fe36
+PASS [t=4212000]: rd_data=0x7c0ddc94
+PASS [t=4233000]: rd_data=0x3ce0640c
+PASS [t=4268000]: rd_data=0x5081d3c5
+PASS [t=4289000]: rd_data=0xaeba36e6
+PASS [t=4310000]: rd_data=0x6902b062
+PASS [t=4394000]: rd_data=0x7cdf83ca
+PASS [t=4415000]: rd_data=0xadfb8d2b
+PASS [t=4443000]: rd_data=0x79729fb4
+PASS [t=4464000]: rd_data=0xad9ef996
+PASS [t=4492000]: rd_data=0x3e065a33
+PASS [t=4513000]: rd_data=0x561237fe
+PASS [t=4534000]: rd_data=0x83c7d950
+PASS [t=4576000]: rd_data=0xac3a80fc
+PASS [t=4674000]: rd_data=0x6d8f3fe2
+PASS [t=4821000]: rd_data=0x69579882
+PASS [t=4842000]: rd_data=0x09dd6100
+PASS [t=4863000]: rd_data=0x13dbfb00
+PASS [t=4933000]: rd_data=0x30a16301
+PASS [t=4961000]: rd_data=0x3abcba87
+PASS [t=4996000]: rd_data=0x89ce6328
+PASS [t=5087000]: rd_data=0x56c43a18
+PASS [t=5108000]: rd_data=0x884f9ce5
+PASS [t=5213000]: rd_data=0x14483648
+PASS [t=5241000]: rd_data=0x9a1c5ea5
+PASS [t=5325000]: rd_data=0x054d3462
+PASS [t=5346000]: rd_data=0xa8b72418
+PASS [t=5402000]: rd_data=0x7f151958
+PASS [t=5423000]: rd_data=0x588af42b
+PASS [t=5444000]: rd_data=0x1faf7421
+PASS [t=5465000]: rd_data=0x2f957fdb
+PASS [t=5584000]: rd_data=0x8d2fb595
+PASS [t=5605000]: rd_data=0x777f9ac4
+PASS [t=5626000]: rd_data=0x0b30b9e4
+PASS [t=5682000]: rd_data=0x636a9fc1
+PASS [t=5703000]: rd_data=0x05d545a2
+PASS [t=5724000]: rd_data=0x624ae3e8
+PASS [t=5787000]: rd_data=0x9d823e27
+PASS [t=5815000]: rd_data=0x4bc4d7bd
+PASS [t=5843000]: rd_data=0x00fcf310
+PASS [t=5934000]: rd_data=0x1fdc8fbc
+PASS [t=5955000]: rd_data=0xaf45a26a
+PASS [t=5976000]: rd_data=0x139f07f2
+PASS [t=5997000]: rd_data=0x27aba0ac
+PASS [t=6032000]: rd_data=0x22fff808
+PASS [t=6102000]: rd_data=0x6d70bb23
+PASS [t=6137000]: rd_data=0x1b29d7c4
+PASS [t=6172000]: rd_data=0x5092f32d
+PASS [t=6214000]: rd_data=0x1fdfb05f
+PASS [t=6242000]: rd_data=0x7623a10a
+PASS [t=6263000]: rd_data=0x556ce6d2
+PASS [t=6305000]: rd_data=0x560351c4
+PASS [t=6417000]: rd_data=0x355a57e9
+PASS [t=6438000]: rd_data=0x1e1389eb
+PASS [t=6459000]: rd_data=0x7027ba4a
+PASS [t=6480000]: rd_data=0xaae89bce
+PASS: random traffic complete
+
+========================================
+  Tests run : 141
+  Errors    : 0
+  RESULT    : ALL TESTS PASSED
+========================================
+$finish called at time : 6479500 ps : File "/home/reajul/Desktop/asyn_fifo_third/tb/tb_async_fifo.sv" Line 298
+exit
+INFO: xsimkernel Simulation Memory Usage: 288432 KB (Peak: 336992 KB), Simulation CPU Usage: 1190 ms
+INFO: [Common 17-206] Exiting xsim at Tue Jun  2 16:22:15 2026...
