@@ -1,0 +1,285 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Jul 10 15:58:02 2026
+# Process ID         : 4168724
+# Current directory  : /home/reajul/Desktop/aynchronous_fifo_fpga/asynchronous_fifo.runs/synth_1
+# Command line       : vivado -log async_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source async_fifo.tcl
+# Log file           : /home/reajul/Desktop/aynchronous_fifo_fpga/asynchronous_fifo.runs/synth_1/async_fifo.vds
+# Journal file       : /home/reajul/Desktop/aynchronous_fifo_fpga/asynchronous_fifo.runs/synth_1/vivado.jou
+# Running On         : vlsi-vivado
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+# CPU Frequency      : 3999.952 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 41879 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 50469 MB
+# Available Virtual  : 40879 MB
+#-----------------------------------------------------------
+source async_fifo.tcl -notrace
+Command: synth_design -top async_fifo -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4168936
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2299.102 ; gain = 491.594 ; free physical = 25155 ; free virtual = 37577
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'async_fifo' [/home/reajul/Desktop/asyn_fifo_third/rtl/async_fifo.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'fifo_mem' [/home/reajul/Desktop/asyn_fifo_third/rtl/fifo_mem.sv:4]
+	Parameter DATA_WIDTH bound to: 32'sb00000000000000000000000000100000 
+	Parameter FIFO_DEPTH bound to: 32'sb00000000000000000000000000010000 
+	Parameter PTR_WIDTH bound to: 32'sb00000000000000000000000000000101 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_mem' (0#1) [/home/reajul/Desktop/asyn_fifo_third/rtl/fifo_mem.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'fifo_wr_ctrl' [/home/reajul/Desktop/asyn_fifo_third/rtl/fifo_wr_ctrl.sv:4]
+	Parameter PTR_WIDTH bound to: 32'sb00000000000000000000000000000101 
+	Parameter FIFO_DEPTH bound to: 32'sb00000000000000000000000000010000 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_wr_ctrl' (0#1) [/home/reajul/Desktop/asyn_fifo_third/rtl/fifo_wr_ctrl.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'fifo_rd_ctrl' [/home/reajul/Desktop/asyn_fifo_third/rtl/fifo_rd_ctrl.sv:4]
+	Parameter PTR_WIDTH bound to: 32'sb00000000000000000000000000000101 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_rd_ctrl' (0#1) [/home/reajul/Desktop/asyn_fifo_third/rtl/fifo_rd_ctrl.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'sync_2ff' [/home/reajul/Desktop/asyn_fifo_third/rtl/sync_2ff.sv:4]
+	Parameter WIDTH bound to: 32'sb00000000000000000000000000000101 
+INFO: [Synth 8-6155] done synthesizing module 'sync_2ff' (0#1) [/home/reajul/Desktop/asyn_fifo_third/rtl/sync_2ff.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'async_fifo' (0#1) [/home/reajul/Desktop/asyn_fifo_third/rtl/async_fifo.sv:4]
+WARNING: [Synth 8-7129] Port wr_ptr[4] in module fifo_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_ptr[4] in module fifo_mem is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2384.070 ; gain = 576.562 ; free physical = 25064 ; free virtual = 37487
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2398.914 ; gain = 591.406 ; free physical = 25065 ; free virtual = 37488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2398.914 ; gain = 591.406 ; free physical = 25065 ; free virtual = 37488
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2398.914 ; gain = 0.000 ; free physical = 25065 ; free virtual = 37488
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/reajul/Desktop/aynchronous_fifo_fpga/asynchronous_fifo.srcs/constrs_1/new/constrains.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [/home/reajul/Desktop/aynchronous_fifo_fpga/asynchronous_fifo.srcs/constrs_1/new/constrains.xdc:1]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [/home/reajul/Desktop/aynchronous_fifo_fpga/asynchronous_fifo.srcs/constrs_1/new/constrains.xdc:1]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/reajul/Desktop/aynchronous_fifo_fpga/asynchronous_fifo.srcs/constrs_1/new/constrains.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2501.652 ; gain = 0.000 ; free physical = 25056 ; free virtual = 37479
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2501.688 ; gain = 0.000 ; free physical = 25064 ; free virtual = 37486
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2501.688 ; gain = 694.180 ; free physical = 25106 ; free virtual = 37529
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2509.656 ; gain = 702.148 ; free physical = 25106 ; free virtual = 37529
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2509.656 ; gain = 702.148 ; free physical = 25106 ; free virtual = 37529
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2509.656 ; gain = 702.148 ; free physical = 25104 ; free virtual = 37528
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 4     
++---XORs : 
+	   2 Input      5 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 8     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	              512 Bit	(16 X 32 bit)          RAMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2509.656 ; gain = 702.148 ; free physical = 25080 ; free virtual = 37509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+---------------+-----------+----------------------+-------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives  | 
++------------+---------------+-----------+----------------------+-------------+
+|async_fifo  | u_mem/mem_reg | Implied   | 16 x 32              | RAM32M x 6  | 
++------------+---------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2509.656 ; gain = 702.148 ; free physical = 25080 ; free virtual = 37509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+---------------+-----------+----------------------+-------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives  | 
++------------+---------------+-----------+----------------------+-------------+
+|async_fifo  | u_mem/mem_reg | Implied   | 16 x 32              | RAM32M x 6  | 
++------------+---------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2509.656 ; gain = 702.148 ; free physical = 25080 ; free virtual = 37509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2606.469 ; gain = 798.961 ; free physical = 25000 ; free virtual = 37428
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2606.469 ; gain = 798.961 ; free physical = 25000 ; free virtual = 37428
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2606.469 ; gain = 798.961 ; free physical = 25000 ; free virtual = 37428
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2606.469 ; gain = 798.961 ; free physical = 25000 ; free virtual = 37428
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2606.469 ; gain = 798.961 ; free physical = 25000 ; free virtual = 37428
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2606.469 ; gain = 798.961 ; free physical = 25000 ; free virtual = 37428
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |LUT1     |     1|
+|3     |LUT2     |     4|
+|4     |LUT3     |     2|
+|5     |LUT4     |     4|
+|6     |LUT5     |     4|
+|7     |LUT6     |    14|
+|8     |RAM32M   |     5|
+|9     |RAM32X1D |     2|
+|10    |FDCE     |    39|
+|11    |FDPE     |     1|
+|12    |FDRE     |    32|
+|13    |IBUF     |    37|
+|14    |OBUF     |    34|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2606.469 ; gain = 798.961 ; free physical = 25000 ; free virtual = 37428
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2606.469 ; gain = 696.188 ; free physical = 25000 ; free virtual = 37428
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2606.477 ; gain = 798.961 ; free physical = 25000 ; free virtual = 37428
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2622.312 ; gain = 0.000 ; free physical = 24984 ; free virtual = 37413
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2776.934 ; gain = 0.000 ; free physical = 25021 ; free virtual = 37449
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 5 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+Synth Design complete | Checksum: 2abd5893
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2776.969 ; gain = 1154.453 ; free physical = 25024 ; free virtual = 37453
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1713.152; main = 1713.152; forked = 236.375
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3495.910; main = 2776.938; forked = 994.254
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2800.945 ; gain = 0.000 ; free physical = 25024 ; free virtual = 37453
+INFO: [Common 17-1381] The checkpoint '/home/reajul/Desktop/aynchronous_fifo_fpga/asynchronous_fifo.runs/synth_1/async_fifo.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file async_fifo_utilization_synth.rpt -pb async_fifo_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 10 15:58:27 2026...

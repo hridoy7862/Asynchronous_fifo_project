@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1783677479">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="async_fifo_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="async_fifo_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="async_fifo.vdi"/>
+  <File Type="BG-DRC" Name="async_fifo.drc"/>
+  <File Type="BG-BGN" Name="async_fifo.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="async_fifo.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="async_fifo.ltx"/>
+  <File Type="PL-LTX-FILE" Name="async_fifo_pld.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="async_fifo_boot.ltx"/>
+  <File Type="LTX-FILE" Name="async_fifo.ltx"/>
+  <File Type="PL-BIF-FILE" Name="async_fifo_pld.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="async_fifo_boot.bif"/>
+  <File Type="BIF-FILE" Name="async_fifo.bif"/>
+  <File Type="MMI-FILE" Name="async_fifo.mmi"/>
+  <File Type="RBD_FILE" Name="async_fifo.rbd"/>
+  <File Type="NPI_FILE" Name="async_fifo.npi"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="async_fifo_pld_unmask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="async_fifo_pld_unmask_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="async_fifo_pld_mask.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="async_fifo_pld_markers.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="async_fifo_pld_clear.rcdo"/>
+  <File Type="PL-RCDO-FILE" Name="async_fifo_pld.rcdo"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="async_fifo_pld_unmask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="async_fifo_pld_shutdown.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="async_fifo_pld_mask.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="async_fifo_pld_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="async_fifo_pld.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="async_fifo_boot_markers.rnpi"/>
+  <File Type="BOOT_RNPI_FILE" Name="async_fifo_boot.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="async_fifo_markers.rcdo"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="async_fifo_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="async_fifo_routed.dcp"/>
+  <File Type="ROUTE-DRC-RPX" Name="async_fifo_drc_routed.rpx"/>
+  <File Type="ROUTE-ERROR-DCP" Name="async_fifo_routed_error.dcp"/>
+  <File Type="MARKER-RNPI-FILE" Name="async_fifo_markers.rnpi"/>
+  <File Type="PHYSOPT-TIMING" Name="async_fifo_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="async_fifo_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="async_fifo_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="async_fifo_postplace_pwropt.dcp"/>
+  <File Type="NOC_SOLUTION_FILE" Name="async_fifo.ncr"/>
+  <File Type="ROUTE-DRC-PB" Name="async_fifo_drc_routed.pb"/>
+  <File Type="ROUTE-UTIL-PB" Name="async_fifo_utilization_routed.pb"/>
+  <File Type="PLACE-UTIL-PB" Name="async_fifo_utilization_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="async_fifo_timing_summary_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="async_fifo_control_sets_placed.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="async_fifo_utilization_opted.pb"/>
+  <File Type="PLACE-UTIL" Name="async_fifo_utilization_placed.rpt"/>
+  <File Type="OPT-UTIL" Name="async_fifo_utilization_opted.rpt"/>
+  <File Type="PA-TCL" Name="async_fifo.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="async_fifo_bus_skew_routed.pb"/>
+  <File Type="OPT-DRC" Name="async_fifo_drc_opted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="async_fifo_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="OPT-DCP" Name="async_fifo_opt.dcp"/>
+  <File Type="ROUTE-DRC" Name="async_fifo_drc_routed.rpt"/>
+  <File Type="PWROPT-TIMING" Name="async_fifo_timing_summary_pwropted.rpt"/>
+  <File Type="REPORTS-TCL" Name="async_fifo_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="async_fifo_bus_skew_routed.rpx"/>
+  <File Type="PWROPT-DRC" Name="async_fifo_drc_pwropted.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="async_fifo_incremental_reuse_placed.rpt"/>
+  <File Type="INIT-TIMING" Name="async_fifo_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="async_fifo_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="async_fifo.hwdef"/>
+  <File Type="ROUTE-UTIL" Name="async_fifo_utilization_routed.rpt"/>
+  <File Type="PLACE-CLK" Name="async_fifo_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="async_fifo_incremental_reuse_pre_placed.rpt"/>
+  <File Type="OPT-TIMING" Name="async_fifo_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="async_fifo_pwropt.dcp"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="async_fifo.nts"/>
+  <File Type="PLACE-DCP" Name="async_fifo_placed.dcp"/>
+  <File Type="OPT-RQA-PB" Name="async_fifo_rqa_opted.pb"/>
+  <File Type="PLACE-IO" Name="async_fifo_io_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="async_fifo_rqa_placed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="async_fifo_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="async_fifo_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="async_fifo_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="async_fifo_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="async_fifo_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="async_fifo_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="async_fifo_route_status.rpt"/>
+  <File Type="RCDO-FILE" Name="async_fifo.rcdo"/>
+  <File Type="ROUTE-STATUS-PB" Name="async_fifo_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="async_fifo_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="async_fifo_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="async_fifo_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="async_fifo_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="async_fifo_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="async_fifo_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-RQS-PB" Name="async_fifo_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="async_fifo_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="async_fifo_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="async_fifo_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="async_fifo_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="async_fifo_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="async_fifo_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="async_fifo_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="async_fifo_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="async_fifo.bit"/>
+  <File Type="PDI-FILE" Name="async_fifo.pdi"/>
+  <File Type="BG-BIN" Name="async_fifo.bin"/>
+  <File Type="CFI_FILE" Name="async_fifo.cfi"/>
+  <File Type="BITSTR-MSK" Name="async_fifo.msk"/>
+  <File Type="RNPI_FILE" Name="async_fifo.rnpi"/>
+  <File Type="BITSTR-RBT" Name="async_fifo.rbt"/>
+  <File Type="BITSTR-NKY" Name="async_fifo.nky"/>
+  <File Type="BITSTR-BMM" Name="async_fifo_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="async_fifo.mmi"/>
+  <File Type="BOOT-PDI-FILE" Name="async_fifo_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="async_fifo_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="async_fifo.rcfi"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../asyn_fifo_third/rtl/fifo_mem.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../asyn_fifo_third/rtl/fifo_rd_ctrl.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../asyn_fifo_third/rtl/fifo_wr_ctrl.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../asyn_fifo_third/rtl/sync_2ff.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../asyn_fifo_third/rtl/async_fifo.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="async_fifo"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constrains.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
